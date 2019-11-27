@@ -1,0 +1,7 @@
+To reroute intra.42.fr to 42.19.122.85 we should add those parameter to the /etc/hosts file.
+It should look like:
+
+	127.0.0.1       localhost
+	255.255.255.255 broadcasthost
+	::1             localhost
+	42.19.122.85	intra.42.fr

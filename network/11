@@ -1,0 +1,14 @@
+With this example ( running  [./10 = traceroute slash16.fr] ):
+
+	traceroute to slash16.fr (195.154.52.157), 64 hops max, 52 byte packets
+	1  10.12.254.254 (10.12.254.254)  2.278 ms  0.702 ms  4.413 ms
+	2  nat-1 (10.60.1.11)  0.180 ms  0.168 ms  0.183 ms
+	3  dc3 (62.210.35.1)  1.744 ms  1.877 ms  8.046 ms
+	4  195.154.1.174 (195.154.1.174)  1.289 ms  3.857 ms  1.188 ms
+	5  a9k1-45x-s44-2.dc3.poneytelecom.eu (195.154.1.104)  1.227 ms  1.133 ms  1.173 ms
+	6  49e-s202b-1-dc2-a9k1.dc2.poneytelecom.eu (195.154.1.29)  0.986 ms  1.034 ms  1.115 ms
+	7  195.154.2.189 (195.154.2.189)  0.874 ms  0.914 ms  0.986 ms
+	8  195-154-52-157.rev.poneytelecom.eu (195.154.52.157)  0.876 ms  0.798 ms  0.768 ms
+
+We can see that the last IP which starts by 10 (our local network) is 10.60.1.11,
+so this is the one which connects us with the world (nat-1).

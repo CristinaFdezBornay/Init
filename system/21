@@ -1,0 +1,3 @@
+Human users have UIDs bigger than 1000, so you can use that fact to filter out the non-human.
+The command to obtain the real users is:
+	-> cat /etc/passwd | cut -d: -f1,3 | egrep ':[0-9]{4}$' | cut -d: -f1

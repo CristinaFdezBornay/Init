@@ -1,0 +1,9 @@
+Some possibilities are:
+	-> w
+	-> who
+	-> users
+	-> last
+
+The commands [w], [who] and [users] show who is currently logged on. [w] gives more info than [who]
+[Last] looks through /var/log/wtmp and displays a log of the last users logged on,
+including those currently logged on.

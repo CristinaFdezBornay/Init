@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo touch a b
+sudo cat /etc/crontab > a
+sudo cat /home/crfernan/crontab_cpy > b
+DIFF=$(diff a b)
+if [ "$DIFF" != "" ]
+then
+	mail -s "Hello!" root@debian < /home/crfernan/mail_crontab.txt
+fi
+sudo rm a b
+sudo cp /etc/crontab /home/crfernan/crontab_cpy

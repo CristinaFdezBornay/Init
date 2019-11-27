@@ -1,0 +1,5 @@
+There are several options:
+
+1) who -b
+2) last reboot | less
+3) last reboot | head -1

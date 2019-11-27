@@ -1,0 +1,12 @@
+	-> lsblk
+	-> sudo fdisk -l
+	-> sudo sfdisk -l /dev/sda
+
+The [lsblk] command lists all the block devices of your system along with their logical partitions.
+
+The [fdisk] command is used to create, format or delete hard disk partitions. 
+Here we will use it to list the partitions table by using a particular flag with it.
+
+The [sfdisk] command is primarily used to manipulate partition tables on Linux.
+It can also be used to list the partitions tables of a device by using the following syntax: 
+	[sudo sfdisk -l/dev/devicename]

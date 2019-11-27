@@ -1,0 +1,5 @@
+There are two options:
+	-> kill <PID of the process>
+	-> kill %1
+
+		*To find the PID of the process we can [pgrep <name of the process>] or [pidof <>]

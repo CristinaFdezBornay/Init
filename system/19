@@ -1,0 +1,8 @@
+There are two options:
+	-> systemctl list-units --type service
+	-> ls /etc/rc*.d
+
+		*Explanation of the 2nd: 
+			{ /etc/rc or /etc/rc.d or /etc/rc?.d } contain the scripts
+			or directories of scripts to run at startup or when changing
+			the run level.

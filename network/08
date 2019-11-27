@@ -1,0 +1,2 @@
+whois slash16.org | grep 'Name Server'
+echo "The provider of slash16.org is Amazon Web Services"

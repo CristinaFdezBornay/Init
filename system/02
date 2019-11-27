@@ -1,0 +1,18 @@
+su
+	-> <root password>
+hostname <user>
+su crfernan
+
+
+
+
+/*
+	When I try to execute the command hostname on my VM:
+
+		-> hostname: you must be root to change the host name
+
+	For getting root permission the command to execute is [su],
+	then the root pasword should be introduced [Cristina.1996].
+	After that we can change the hostname by modifying the /etc/hostname file
+	and reboot the system [sudo reboot] to make it permanent.
+*/

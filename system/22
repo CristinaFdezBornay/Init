@@ -1,0 +1,8 @@
+The commandis to add a usser is:
+	-> sudo useradd <name_user>
+	-> sudo adduser <name_user>
+
+It can be checked with the command of the previous exercise.
+The second command ask for some extra information (Full Name, Room Number...).
+The interesting part is that with the second one, we're asked to paswword,
+so we can change the user to the one created using [su <name_user>].

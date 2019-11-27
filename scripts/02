@@ -1,0 +1,7 @@
+#! /bin/bash
+echo ACTIVE USERS:
+who | cut -d' ' -f1
+echo WHICH USER DO YOU WANT TO DELETE ?
+read USER
+sudo pkill -u $USER
+sudo userdel -rf $USER

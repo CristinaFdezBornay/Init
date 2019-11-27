@@ -1,0 +1,23 @@
+The command that should be ued to schedule task is [crontab].
+If the flag [-e] is added we can edit the commands that are alredeady scheduled.
+The syntax should be:
+	-> * * * * * <process>
+
+
+The starts represent different date parts in the following order:
+	1)	minute (from 0 to 59)
+	2)	hour (from 0 to 23)
+	3)	day of month (from 1 to 31)
+	4)	month (from 1 to 12)
+	5)	day of week (from 0 to 6) (0=Sunday)
+The stars can also replaced by some useful keywords:
+	-	@reboot     Run once, at startup
+	-	@yearly     Run once  a year     "0 0 1 1 *"
+	-	@annually   (same as  @yearly)
+	-	@monthly    Run once  a month    "0 0 1 * *"
+	-	@weekly     Run once  a week     "0 0 * * 0"
+	-	@daily      Run once  a day      "0 0 * * *"
+	-	@midnight   (same as  @daily)
+	-	@hourly     Run once  an hour    "0 * * * *"
+
+The command [crontab] also allows to send the output by mail, store it and delete it.

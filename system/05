@@ -1,0 +1,5 @@
+systemclt status sshd
+
+When executing this command we should get:
+	-> Unist sshd.service could not be found.
+Our VM is not currently connected to any other machine using SSH protocol.

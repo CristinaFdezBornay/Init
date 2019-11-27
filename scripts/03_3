@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo date >> /var/log/update_script.log
+sudo apt-get -y -q update >> /var/log/update_script.log
+sudo apt-get -y -q upgrade >> /var/log/update_script.log
+sudo echo "" >> /var/log/update_script.log

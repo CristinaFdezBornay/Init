@@ -1,0 +1,5 @@
+The command to find out the used and available space if [df].
+We need to add the flag -h which stands for: --human-readable.
+It print the sizes in human readable format (e.g., 1K 234M 2G)
+
+	-> df -h

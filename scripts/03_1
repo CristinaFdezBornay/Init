@@ -1,0 +1,44 @@
+#! /bin/bash
+echo "Hello!! This may not be the most usefull script but it's very pedagogical :)"
+echo "Lest's start with some math to use variables, please introduce one number and press ENTER"
+read NUM_1
+if [[ $NUM_1 != 0 ]] && [[ $NUM_1 != 1 ]] && [[ $NUM_1 != 2 ]] && [[ $NUM_1 != 3 ]]; then
+	if [[ $NUM_1 != 4 ]] && [[ $NUM_1 != 5 ]] && [[ $NUM_1 != 6 ]] && [[ $NUM_1 != 7 ]]; then
+		if [[ $NUM_1 != 8 ]] && [[ $NUM_1 != 9 ]]; then
+			echo "That's not a number!"
+			echo "Please try again, be nice this time :)"
+			read NUM_1
+		fi
+	fi
+fi
+echo "Now, introduce the second one and press ENTER"
+read NUM_2
+if [[ $NUM_2 != 0 ]] && [[ $NUM_2 != 1 ]] && [[ $NUM_2 != 2 ]] && [[ $NUM_2 != 3 ]]; then
+	if [[ $NUM_2 != 4 ]] && [[ $NUM_2 != 5 ]] && [[ $NUM_2 != 6 ]] && [[ $NUM_2 != 7 ]]; then
+		if [[ $NUM_2 != 8 ]] && [[ $NUM_2 != 9 ]]; then
+			echo "Oh!! Comme on... That's not a number!"
+			echo "Please try again, be nice this time :)"
+			read NUM_2
+		fi
+	fi
+fi
+echo "Okey! Your first number is: $NUM_1 and the second one is: $NUM_2"
+echo "Now select what do you want to do (+ , -, *, / or nothing), the result will be in OUT file"
+read OP
+if [[ $OP == '+' ]]; then
+	out=$((NUM_1+NUM_2))
+elif [[ $OP == '-' ]]; then
+	out=$((NUM_1-NUM_2))
+elif [[ $OP == '*' ]]; then
+	out=$((NUM_1*NUM_2))
+elif [[ $OP == '/' ]]; then
+	out=$((NUM_1/NUM_2))
+elif [[ $OP == "nothing" ]]; then
+	out="Got it, you're really tired of this correction... Go home and rest for the weekend. Thank you :D"
+else
+	echo "Oh God... It was not that difficult! You survived the piscine, just type +, -, *, / or nothing."
+fi
+echo $out > OUT
+echo "The result it's now in OUT, yes, right in this folder, so you can \"cat OUT\" if you feel like"
+echo ""
+echo "THANK YOU SO MUCH FOR THE CORRECTION!! SEE YOU :) :) :)"

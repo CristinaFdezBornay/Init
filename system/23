@@ -1,0 +1,7 @@
+With the ssh sesion we can use the command:
+	-> su <user>
+In our case it'll be:
+	-> su crfernan
+
+Using the graphical interface we have to click on "switch user",
+then we've to select our user <CRISTINA> and introduce the right password < >.

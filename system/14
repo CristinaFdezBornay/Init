@@ -1,0 +1,2 @@
+To run a process in the background who should add [&] at the end of the command:
+	-> tail -f /var/log/syslog &

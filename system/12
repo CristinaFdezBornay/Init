@@ -1,0 +1,6 @@
+The command to check a directory and subdirectories sizes is [du]. Add [-h] to change the format.
+	-> sudo du -h /var
+
+We can also add the flag [-dN] to print the total for a directory,
+only if it is on N or fewer levels (N = 0 == [-s] (summarize)).
+	-> sudo du -d3 -h /var

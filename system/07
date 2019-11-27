@@ -1,0 +1,4 @@
+It can be checked in this file:
+	-> /var/run/sshd.pid
+or executing this command:
+	-> pidof sshd
